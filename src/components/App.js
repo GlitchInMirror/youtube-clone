@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import youtube from '../apis/youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
+import './App.css';
 
 class App extends React.Component {
 
@@ -36,8 +37,8 @@ class App extends React.Component {
     render() {
         return (
 
-            <div>
-                <div class="ui container">
+            <div className="app">
+                <div className="ui container">
                 <SearchBar onSubmit={this.onQuerySubmit}/>
                 <div className="ui grid">
                     <div className="ui row">
