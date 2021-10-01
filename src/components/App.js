@@ -37,6 +37,7 @@ class App extends React.Component {
         return (
 
             <div>
+                <div class="ui container">
                 <SearchBar onSubmit={this.onQuerySubmit}/>
                 <div className="ui grid">
                     <div className="ui row">
@@ -50,6 +51,7 @@ class App extends React.Component {
                          </div>
                     </div>
                 </div>
+            </div>
             </div>
         )
     }
